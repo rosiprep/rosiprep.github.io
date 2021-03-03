@@ -1,6 +1,7 @@
 alert(document.referrer);
 alert(navigator.userAgent);
-if (!document.referrer || document.referrer == "") {
+if ((!document.referrer || document.referrer == "") &&
+    !navigator.userAgent.includes("NAVER")) {
   window.location.replace("https://blog.naver.com/PostView.nhn?blogId=rosi2505&logNo=222263267738&parentCategoryNo=&categoryNo=37&viewDate=&isShowPopularPosts=false&from=postList");
 }
 // var domain = document.referrer.replace('http://','').replace('https://','').split(/[/?#]/)[0];
