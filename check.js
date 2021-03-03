@@ -1,4 +1,5 @@
 alert(document.referrer);
+alert(navigator.userAgent);
 if (!document.referrer || document.referrer == "") {
   window.location.replace("https://blog.naver.com/PostView.nhn?blogId=rosi2505&logNo=222263267738&parentCategoryNo=&categoryNo=37&viewDate=&isShowPopularPosts=false&from=postList");
 }
