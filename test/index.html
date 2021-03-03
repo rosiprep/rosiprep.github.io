@@ -4,7 +4,7 @@
   <title>ROSI-PREP Main</title>
 </head>
 <body>
-	<script> if (document.referrer != "https://rosiprep.github.io/") { window.location.replace("https://rosiprep.github.io/"); } </script>
+	<script> if (document.referrer.replace(/^https?:\/\//,'').replace(/\/$/, '') != "rosiprep.github.io") { window.location.replace("https://rosiprep.github.io/"); } </script>
   Test
 </body>
 </html>
