@@ -1,0 +1,146 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+:root {
+  --hue-normal: 200;
+  --hue-wrong: 0;
+  --hue-correct: 145;
+}
+
+body {
+  font-family: 'Nanum Gothic', sans-serif;
+  --hue: var(--hue-normal);
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(var(--hue), 100%, 20%);
+}
+
+body.correct {
+  --hue: var(--hue-correct);
+}
+
+body.wrong {
+  --hue: var(--hue-wrong);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+.container {
+  width: 40rem;
+  max-width: 80%;
+  background-color: white;
+  border-radius: 0.4rem;
+  border: 0.1875rem solid #D8D4C3;
+  padding: 1rem;
+  box-shadow: 0 0 0.5rem 0.1rem;
+}
+
+.alphabet-grid-container {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  gap: 0.1rem;
+  margin: 1.1rem 0;
+}
+
+.alphabet-grid-item {
+  text-align: center;
+  border: 0.15rem solid hsl(var(--hue-normal), 100%, 30%);
+  color: white;
+  background-color: hsl(var(--hue-normal), 100%, 50%);
+}
+
+.alphabet-grid-item-empty {
+  text-align: center;
+  color: black;
+  border: 0.15rem solid hsl(var(--hue-normal), 100%, 30%);
+}
+
+.menu-maintext {
+  font-size: 0.95rem;
+  margin: 0.1rem;
+}
+
+.menu-subtext {
+  font-size: 0.75rem;
+  margin: 0.1rem;
+}
+
+.btn-grid-menu {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.3rem;
+  margin: 1.1rem 0;
+}
+
+.btn-grid1 {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 0.55rem;
+  margin: 1.1rem 0;
+}
+
+.btn-grid2 {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  gap: 0.55rem;
+  margin: 1.1rem 0;
+}
+
+.btn {
+  --hue: var(--hue-normal);
+  background-color: hsl(var(--hue), 100%, 50%);
+  border: 0.2rem solid hsl(var(--hue), 100%, 30%);
+  border-radius: 0.3rem;
+  padding: 0.3rem 0.6rem;
+  color: white;
+  outline: none;
+}
+
+.btn:hover {
+  border-color: black;
+}
+
+.btn.correct {
+  --hue: var(--hue-correct);
+  color: black;
+}
+
+.btn.wrong {
+  --hue: var(--hue-wrong);
+}
+
+.start-btn, .next-btn {
+  font-size: 2rem;
+  padding: 0.6rem 1.2rem;
+}
+
+.sound-btn {
+  margin: 1rem 0;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide {
+  display: none;
+}
