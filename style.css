@@ -126,6 +126,11 @@ h1 {
   --hue: var(--hue-wrong);
 }
 
+.stop-btn {
+  float: right;
+  text-decoration: none;
+}
+
 .start-btn, .next-btn {
   font-size: 2rem;
   padding: 0.6rem 1.2rem;
