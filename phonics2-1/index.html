@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <script src="/check.js"></script>
+  <script src="/util.js"></script>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,36 +16,37 @@
 <body>
   <div class="container">
     <h1 id="heading">알파벳 순서 - 대문자</h1>
-    <div id="alphabet-grid" class="alphabet-grid-container">
-      <div id="alphabet-1" class="alphabet-grid-item hide">A</div>
-      <div id="alphabet-2" class="alphabet-grid-item hide">B</div>
-      <div id="alphabet-3" class="alphabet-grid-item hide">C</div>
-      <div id="alphabet-4" class="alphabet-grid-item hide">D</div>
-      <div id="alphabet-5" class="alphabet-grid-item hide">E</div>
-      <div id="alphabet-6" class="alphabet-grid-item hide">F</div>
-      <div id="alphabet-7" class="alphabet-grid-item hide">G</div>
-      <div id="alphabet-8" class="alphabet-grid-item hide">H</div>
-      <div id="alphabet-9" class="alphabet-grid-item hide">I</div>
-      <div id="alphabet-10" class="alphabet-grid-item hide">J</div>
-      <div id="alphabet-11" class="alphabet-grid-item hide">K</div>
-      <div id="alphabet-12" class="alphabet-grid-item hide">L</div>
-      <div id="alphabet-13" class="alphabet-grid-item hide">M</div>
-      <div id="alphabet-14" class="alphabet-grid-item hide">N</div>
-      <div id="alphabet-15" class="alphabet-grid-item hide">O</div>
-      <div id="alphabet-16" class="alphabet-grid-item hide">P</div>
-      <div id="alphabet-17" class="alphabet-grid-item hide">Q</div>
-      <div id="alphabet-18" class="alphabet-grid-item hide">R</div>
-      <div id="alphabet-19" class="alphabet-grid-item hide">S</div>
-      <div id="alphabet-20" class="alphabet-grid-item hide">T</div>
-      <div id="alphabet-21" class="alphabet-grid-item hide">U</div>
-      <div id="alphabet-22" class="alphabet-grid-item hide">V</div>
-      <div id="alphabet-23" class="alphabet-grid-item hide">W</div>
-      <div id="alphabet-24" class="alphabet-grid-item hide">X</div>
-      <div id="alphabet-25" class="alphabet-grid-item hide">Y</div>
-      <div id="alphabet-26" class="alphabet-grid-item hide">Z</div>
-    </div>
     <div id="question-container" class="hide">
+      <div><button style="font-size:10pt; float: right" onclick="toggleFullScreen()">전체화면 켜기/끄기</button></div>
       <div id="question">Question goes here</div>
+      <div id="alphabet-grid" class="alphabet-grid-container">
+        <div id="alphabet-1" class="alphabet-grid-item hide">A</div>
+        <div id="alphabet-2" class="alphabet-grid-item hide">B</div>
+        <div id="alphabet-3" class="alphabet-grid-item hide">C</div>
+        <div id="alphabet-4" class="alphabet-grid-item hide">D</div>
+        <div id="alphabet-5" class="alphabet-grid-item hide">E</div>
+        <div id="alphabet-6" class="alphabet-grid-item hide">F</div>
+        <div id="alphabet-7" class="alphabet-grid-item hide">G</div>
+        <div id="alphabet-8" class="alphabet-grid-item hide">H</div>
+        <div id="alphabet-9" class="alphabet-grid-item hide">I</div>
+        <div id="alphabet-10" class="alphabet-grid-item hide">J</div>
+        <div id="alphabet-11" class="alphabet-grid-item hide">K</div>
+        <div id="alphabet-12" class="alphabet-grid-item hide">L</div>
+        <div id="alphabet-13" class="alphabet-grid-item hide">M</div>
+        <div id="alphabet-14" class="alphabet-grid-item hide">N</div>
+        <div id="alphabet-15" class="alphabet-grid-item hide">O</div>
+        <div id="alphabet-16" class="alphabet-grid-item hide">P</div>
+        <div id="alphabet-17" class="alphabet-grid-item hide">Q</div>
+        <div id="alphabet-18" class="alphabet-grid-item hide">R</div>
+        <div id="alphabet-19" class="alphabet-grid-item hide">S</div>
+        <div id="alphabet-20" class="alphabet-grid-item hide">T</div>
+        <div id="alphabet-21" class="alphabet-grid-item hide">U</div>
+        <div id="alphabet-22" class="alphabet-grid-item hide">V</div>
+        <div id="alphabet-23" class="alphabet-grid-item hide">W</div>
+        <div id="alphabet-24" class="alphabet-grid-item hide">X</div>
+        <div id="alphabet-25" class="alphabet-grid-item hide">Y</div>
+        <div id="alphabet-26" class="alphabet-grid-item hide">Z</div>
+      </div>
       <div id="answer-buttons" class="btn-grid2">
         <button class="btn">Answer 1</button>
         <button class="btn">Answer 2</button>
