@@ -12,8 +12,8 @@ let shuffledQuestions
 let currentQuestionIndex = 0
 
 startButton.addEventListener('click', startQuiz)
+soundButton.addEventListener('click', showQuestion)
 nextButton.addEventListener('click', () => {
-  soundButton.removeEventListener('click', playAudio[shuffledQuestions[currentQuestionIndex].audioIndex])
   currentQuestionIndex++
   setNextQuestion()
 })
@@ -37,11 +37,11 @@ function startQuiz() {
 
 function setNextQuestion() {
   resetState()
-  showQuestion(shuffledQuestions[currentQuestionIndex])
+  showQuestion()
 }
 
-function showQuestion(Q) {
-  soundButton.addEventListener('click', playAudio[Q.audioIndex]);playAudio[Q.audioIndex]()
+function showQuestion() {
+  playAudio[shuffledQuestions[currentQuestionIndex].audioIndex]()
 }
 
 function submitAnswer() {
@@ -63,7 +63,6 @@ function submitAnswer() {
     if(questions.length > currentQuestionIndex + 1){
       nextButton.classList.remove('hide')
     } else {
-      soundButton.removeEventListener('click', playAudio[shuffledQuestions[currentQuestionIndex].audioIndex])
       startButton.innerText = '다시 하기'
       startButton.classList.remove('hide')
     }
