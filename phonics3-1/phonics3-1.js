@@ -1,5 +1,6 @@
 const heading = document.getElementById('heading')
 const startButton = document.getElementById('start-btn')
+const showButton = document.getElementById('show-btn')
 const nextButton = document.getElementById('next-btn')
 const soundButton = document.getElementById('sound-btn')
 const questionContainer = document.getElementById('question-container')
@@ -17,6 +18,7 @@ nextButton.addEventListener('click', () => {
   setNextQuestion()
 })
 submitButton.addEventListener('click', submitAnswer)
+showButton.addEventListener('click', showAnswer)
 textInput.addEventListener("keyup", function(event) {
   event.preventDefault();
   if (event.keyCode === 13) {
@@ -54,6 +56,7 @@ function submitAnswer() {
     } else {
       correct=false
       soundIncorrect.play()
+      showButton.classList.remove('hide')
     }
     setStatusClass(document.body, correct)
     
@@ -67,9 +70,14 @@ function submitAnswer() {
   }
 }
 
+function showAnswer() {
+  alert("정답은 " + shuffledQuestions[currentQuestionIndex].answer + " 입니다.")
+}
+
 function resetState() {
   clearStatusClass(document.body)
   nextButton.classList.add('hide')
+  showButton.classList.add('hide')
   textInput.value = ''
 }
 
