@@ -17,6 +17,12 @@ nextButton.addEventListener('click', () => {
   setNextQuestion()
 })
 submitButton.addEventListener('click', submitAnswer)
+textInput.addEventListener("keyup", function(event) {
+  event.preventDefault();
+  if (event.keyCode === 13) {
+    submitButton.click();
+  }
+});
 
 function startQuiz() {
   currentQuestionIndex = 0
