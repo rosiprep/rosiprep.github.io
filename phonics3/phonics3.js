@@ -112,11 +112,11 @@ const audio = [
   new Audio("/mp3/phonics3/bride.mp3"),      //9 B
   new Audio("/mp3/phonics3/brush.mp3"),      //10B
   new Audio("/mp3/phonics3/cage.mp3"),       //11C
-  new Audio("/mp3/phonics3/short.mp3"),      //12C
+  new Audio("/mp3/phonics3/city.mp3"),      //12C
   new Audio("/mp3/phonics3/chin.mp3"),       //13C
   new Audio("/mp3/phonics3/chip.mp3"),       //14C
   new Audio("/mp3/phonics3/chop.mp3"),       //15C
-  new Audio("/mp3/phonics3/shut.mp3"),       //16C
+  new Audio("/mp3/phonics3/face.mp3"),       //16C
   new Audio("/mp3/phonics3/clap.mp3"),       //17C
   new Audio("/mp3/phonics3/cliff.mp3"),      //18C
   new Audio("/mp3/phonics3/cold.mp3"),       //19C
@@ -127,20 +127,20 @@ const audio = [
   new Audio("/mp3/phonics3/drab.mp3"),       //24D
   new Audio("/mp3/phonics3/dress.mp3"),      //25D
   new Audio("/mp3/phonics3/drum.mp3"),       //26D
-  new Audio("/mp3/phonics3/shine.mp3"),       //27F
+  new Audio("/mp3/phonics3/giraffe.mp3"),       //27F
   new Audio("/mp3/phonics3/fish.mp3"),       //28F
   new Audio("/mp3/phonics3/flag.mp3"),       //29F
   new Audio("/mp3/phonics3/frame.mp3"),      //30F
   new Audio("/mp3/phonics3/frog.mp3"),       //31F
   new Audio("/mp3/phonics3/from.mp3"),       //32F
-  new Audio("/mp3/phonics3/swam.mp3"),    //33G
+  new Audio("/mp3/phonics3/gum.mp3"),    //33G
   new Audio("/mp3/phonics3/glass.mp3"),      //34G
   new Audio("/mp3/phonics3/globe.mp3"),      //35G
   new Audio("/mp3/phonics3/gold.mp3"),       //36G
   new Audio("/mp3/phonics3/grape.mp3"),      //37G
   new Audio("/mp3/phonics3/grass.mp3"),      //38G
-  new Audio("/mp3/phonics3/shame.mp3"),        //39G
-  new Audio("/mp3/phonics3/flame.mp3"),        //40G
+  new Audio("/mp3/phonics3/gym.mp3"),        //39G
+  new Audio("/mp3/phonics3/candy.mp3"),        //40G
   new Audio("/mp3/phonics3/lunch.mp3"),      //41L
   new Audio("/mp3/phonics3/plan.mp3"),       //42P
   new Audio("/mp3/phonics3/shape.mp3"),      //43S
@@ -151,7 +151,7 @@ const audio = [
   new Audio("/mp3/phonics3/slid.mp3"),       //48S
   new Audio("/mp3/phonics3/slide.mp3"),      //49S
   new Audio("/mp3/phonics3/slime.mp3"),      //50S
-  new Audio("/mp3/phonics3/sell.mp3"),      //51S
+  new Audio("/mp3/phonics3/smile.mp3"),      //51S
   new Audio("/mp3/phonics3/smile.mp3"),      //52S
   new Audio("/mp3/phonics3/snack.mp3"),      //53S
   new Audio("/mp3/phonics3/snake.mp3"),      //54S
@@ -162,7 +162,7 @@ const audio = [
   new Audio("/mp3/phonics3/stove.mp3"),      //59S
   new Audio("/mp3/phonics3/swim.mp3"),       //60S
   new Audio("/mp3/phonics3/swing.mp3"),      //61S
-  new Audio("/mp3/phonics3/wish.mp3"),       //62W
+  new Audio("/mp3/phonics3/wash.mp3"),       //62W
   new Audio("/mp3/phonics3/wine.mp3")        //63W
 ]
 const soundCorrect = new Audio("/mp3/sound_correct.mp3")
@@ -235,10 +235,10 @@ const questions = [
     letters: 4,
     answer: 'cage'
   },
-  { //candy
+  {
     audioIndex: 12,
-    letters: 5,
-    answer: 'short'
+    letters: 4,
+    answer: 'city'
   },
   {
     audioIndex: 13,
@@ -258,7 +258,7 @@ const questions = [
   {
     audioIndex: 16,
     letters: 4,
-    answer: 'shut'
+    answer: 'face'
   },
   {
     audioIndex: 17,
@@ -312,8 +312,8 @@ const questions = [
   },
   { //face
     audioIndex: 27,
-    letters: 5,
-    answer: 'shine'
+    letters: 7,
+    answer: 'giraffe'
   },
   { //fish
     audioIndex: 28,
@@ -342,8 +342,8 @@ const questions = [
   },
   { //giraffe
     audioIndex: 33,
-    letters: 4,
-    answer: 'swam'
+    letters: 3,
+    answer: 'gum'
   },
   {
     audioIndex: 34,
@@ -372,13 +372,13 @@ const questions = [
   },
   {
     audioIndex: 39,
-    letters: 5,
-    answer: 'shame'
+    letters: 3,
+    answer: 'gym'
   },
   {
     audioIndex: 40,
     letters: 5,
-    answer: 'flame'
+    answer: 'candy'
   },
   {
     audioIndex: 41,
@@ -432,8 +432,8 @@ const questions = [
   },
   {  
     audioIndex: 51,
-    letters: 4,
-    answer: 'sell'
+    letters: 5,
+    answer: 'smile'
   },
   {
     audioIndex: 52,
@@ -488,7 +488,7 @@ const questions = [
   {
     audioIndex: 62,
     letters: 4,
-    answer: 'wish'
+    answer: 'wash'
   },
   {
     audioIndex: 63,
